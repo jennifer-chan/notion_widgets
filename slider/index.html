@@ -23,30 +23,31 @@ body {
   
 .slider {
   position: relative;
-  width: 400px;
-  height: 400px;
+  max-width: 400px; // This sets the maximum width the slider can be
+  max-height: 400px; // This sets the maximum height the slider can be
   overflow: hidden;
-  display: flex; /* Added to center child elements */
-  align-items: center; /* Vertical alignment */
-  justify-content: center; /* Horizontal alignment */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0; /* Add right and bottom to ensure .slide fills .slider completely. */
-  bottom: 0;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
-  background-position: center center; /* Center the image horizontally and vertically */
-  background-size: auto 100%; /* Keep original width and 100% height */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  display: flex; /* Add this to help with centering if needed */
-  align-items: center; /* Add this to help with centering if needed */
-  justify-content: center; /* Add this to help with centering if needed */
+ position: absolute;
+ top: 0;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ opacity: 0;
+ transition: opacity 0.4s ease-in-out;
+ background-size: contain; // This makes sure the image fits within the container without stretching
+ background-repeat: no-repeat; // Ensure the image does not repeat
+ background-position: center; // Center the image within the slide horizontally and vertically
+ display: flex;
+ align-items: center;
+ justify-content: center;
 }
+
 
 .slide.current {
   opacity: 1;
@@ -55,247 +56,247 @@ body {
 
 .slide:first-child {
   background: url("1.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(2) {
   background: url("2.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(3) {
   background: url("3.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(4) {
   background: url("4.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(5) {
   background: url("5.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(6) {
   background: url("6.jpg") no-repeat
-    center/contain;
+    center center;
 }  
 
 .slide:nth-child(7) {
   background: url("7.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(8) {
   background: url("8.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(9) {
   background: url("9.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(10) {
   background: url("10.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(11) {
   background: url("11.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(12) {
   background: url("12.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(13) {
   background: url("13.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(14) {
   background: url("14.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(15) {
   background: url("15.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(16) {
   background: url("16.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(17) {
   background: url("17.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(18) {
   background: url("18.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(19) {
   background: url("19.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(20) {
   background: url("20.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(21) {
   background: url("21.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(22) {
   background: url("22.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(23) {
   background: url("23.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(24) {
   background: url("24.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(25) {
   background: url("25.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(26) {
   background: url("26.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(27) {
   background: url("27.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(28) {
   background: url("28.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(29) {
   background: url("29.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(30) {
   background: url("30.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(31) {
   background: url("31.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(32) {
   background: url("32.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(33) {
   background: url("33.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(34) {
   background: url("34.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(35) {
   background: url("35.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(36) {
   background: url("36.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(37) {
   background: url("37.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(38) {
   background: url("38.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(39) {
   background: url("39.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(40) {
   background: url("40.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(41) {
   background: url("41.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(42) {
   background: url("42.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(43) {
   background: url("43.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(44) {
   background: url("44.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(45) {
   background: url("45.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(46) {
   background: url("46.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(47) {
   background: url("47.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(48) {
   background: url("48.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .slide:nth-child(49) {
   background: url("49.jpg") no-repeat
-    center/contain;
+    center center;
 }
 
 .buttons button#prev {
