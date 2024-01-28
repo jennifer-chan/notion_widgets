@@ -29,7 +29,6 @@ body {
   display: flex; /* Added to center child elements */
   align-items: center; /* Vertical alignment */
   justify-content: center; /* Horizontal alignment */
-  background-color: #000; /* Default background if images are smaller */
 }
 
 
@@ -37,13 +36,16 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  right: 0; /* Add right and bottom to ensure .slide fills .slider completely. */
+  bottom: 0;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
-  background-position: center; /* Center the image */
-  background-size: contain; /* Scale the image to be as large as possible */
+  background-position: center center; /* Center the image horizontally and vertically */
+  background-size: auto 100%; /* Keep original width and 100% height */
   background-repeat: no-repeat; /* Do not repeat the image */
+  display: flex; /* Add this to help with centering if needed */
+  align-items: center; /* Add this to help with centering if needed */
+  justify-content: center; /* Add this to help with centering if needed */
 }
 
 .slide.current {
